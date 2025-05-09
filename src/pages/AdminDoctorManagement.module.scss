@@ -1,0 +1,175 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+}
+
+.profileIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.logoutButton {
+  padding: 8px 12px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #545b62;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.addDoctorButton {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #1e7e34;
+  }
+}
+
+.refreshButton {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.modalContainer {
+  margin-right: 20px;
+  width: 400px;
+}
+
+.doctorTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+thead {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.doctorTable button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:first-child {
+    background-color: #007bff; /* Edit */
+    color: white;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: #dc3545; /* Delete */
+    color: white;
+
+    &:hover {
+      background-color: #c82333;
+    }
+  }
+
+  &:last-child {
+    background-color: #ffc107; /* Suspend */
+    color: #333;
+
+    &:hover {
+      background-color: #ff9800;
+    }
+  }
+}
+.statsWidget {
+  background-color: #eef;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ccd;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #335;
+  }
+
+  p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    color: #0056b3;
+  }
+}
